@@ -6,6 +6,7 @@ def add():
     name = inputs.name()
     phone = inputs.phone()
     comment = inputs.comment()
+    logger.log(name, phone, comment)
 
 def view():
     # user_interface.view()
