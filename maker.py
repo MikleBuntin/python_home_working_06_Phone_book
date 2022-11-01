@@ -1,5 +1,6 @@
 import user_interface
 import input_interpreter as inputs
+import logger
 
 def add():
     print("Add ")
