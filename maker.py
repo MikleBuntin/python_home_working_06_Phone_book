@@ -31,9 +31,9 @@ def imp():
     file_name = file_name.split('.')
     if file_name[1] == "txt":
         f_imp.imp_txt(file_name[0])
-    elif new_file_name[1] == "csv":
+    elif file_name[1] == "csv":
         f_imp.imp_csv(file_name[0])
-    elif new_file_name[1] == "html":
+    elif file_name[1] == "html":
         f_imp.imp_html(file_name[0])
     else:
         print("Формат не поддерживается. ")

@@ -10,39 +10,31 @@ def imp_txt(f_name):
                 line = line.replace("\n", "")
                 line = line.split(';')
                 logger.log(line[0], line[1], line[2])
-                print("array: ", line)
-
-        # phone_book = file.read()
-        # print("book: ", phone_book)
-        # for line in file:
-        #     # array = list(line.split(';'))
-        #     # name =
-        #     print(line.rindex('name: '))
-        #     print(line.index(' phone: '))
 
 
-
-    # with open(f_name + ".txt", 'w') as new_file:
-    #     new_file.write(phone_book)
-    #     print("Данные сохранены в файл {}.txt.".format(f_name))
-
-
-def log(name, phone, comment):
-    with open('phone_book.csv', 'a') as file:
-        file.write("{};{};{}\n".format(name, phone, comment))
-
-    print("Абонент {} с номером {} ({}) добавлен".format(name, phone, comment))
+def imp_csv(f_name):
+    with open(f_name + ".csv", 'r') as file:
+        for line in file:
+            if len(line) > 3:
+                line = line.split(';')
+                logger.log(line[0], line[1], line[2])
 
 
+def imp_html(f_name):
+    with open(f_name + ".html", 'r') as file:
+        for line in file:
+            line = line.replace("<html>\n  <head></head>\n  <body>\n", "")
+            line = line.replace('style="font-size:30px;', '')
+            line = line.replace("    <p {}>Name: ", "")
+            line = line.replace(", phone: ", ";")
+            line = line.replace(" (", ";")
+            line = line.replace(") </p>\n", "")
+            line = line.replace("< / body >\n < / html >", "")
+            line = line.split(';')
+            if len(line) >= 3:
+                logger.log(line[0], line[1], line[2])
 
-# def save_to_csv(f_name):
-#     with open('phone_book.csv', 'r') as file:
-#         phone_book = file.read()
-#     with open(f_name + ".csv", 'w') as new_file:
-#         new_file.write(phone_book)
-#         print("Данные сохранены в файл {}.csv.".format(f_name))
-#
-# def save_to_html(f_name):
+
 #     with open('phone_book.csv', 'r') as file:
 #         style = 'style="font-size:30px;"'
 #         phone_book = '<html>\n  <head></head>\n  <body>\n'
