@@ -5,5 +5,5 @@ def ask_command(): # выдать список команд, запросить 
     # print("in_command.lower(): ", in_command.lower())
     return in_command.lower()
 
-def view(command):
-    print("command: ", command)
+# def view(command):
+#     print("command: ", command)

@@ -10,10 +10,19 @@ def add():
     logger.log(name, phone, comment)
 
 def view():
-    # user_interface.view()
-    print("View ")
+    logger.view("all") # Закладка для поиска по контактам
+
 
 def save():
+    with open('phone_book.csv', 'r') as file:
+        phone_book = file.read()
+    format = input("Введите имя файла: ")
+    with open(format, 'w') as new_file:
+        new_file.write(phone_book)
+        print("Данные сохранены в файл.")
+
+
+
     print("Save ")
 
 def imp():

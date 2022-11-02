@@ -4,8 +4,11 @@ def name():
     return name
 
 def phone():
+    phone = "a"
     while not phone.isdigit():
         phone = input("Введите телефон: ")
+        if not phone.isdigit():
+            print("Используйте только цифры")
     return phone
 
 def comment():
