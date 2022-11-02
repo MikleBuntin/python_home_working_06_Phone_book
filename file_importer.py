@@ -3,13 +3,14 @@ import logger
 def imp_txt(f_name):
     with open(f_name + ".txt", 'r') as file:
         for line in file:
-            line = line.replace("Name: ", "")
-            line = line.replace(", phone: ", ";")
-            line = line.replace(" - ", ";")
-            line = line.replace("\n", "")
-            line = line.split(';')
-            # logger.log(line[0], line[1], line[2])
-            print("array: ", line)
+            if len(line) > 3:
+                line = line.replace("Name: ", "")
+                line = line.replace(", phone: ", ";")
+                line = line.replace(" - ", ";")
+                line = line.replace("\n", "")
+                line = line.split(';')
+                logger.log(line[0], line[1], line[2])
+                print("array: ", line)
 
         # phone_book = file.read()
         # print("book: ", phone_book)
