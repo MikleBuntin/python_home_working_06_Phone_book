@@ -19,7 +19,7 @@ def save_to_txt(f_name):
 
     with open(f_name + ".txt", 'w') as new_file:
         new_file.write(phone_book)
-        print("Данные сохранены в файл.")
+        print("Данные сохранены в файл {}.txt.".format(f_name))
 
 def save_to_csv(f_name):
     with open('phone_book.csv', 'r') as file:
