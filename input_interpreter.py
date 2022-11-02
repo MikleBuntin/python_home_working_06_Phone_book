@@ -1,16 +1,13 @@
 
 def name():
-    print(" name ")
-    return "name01"
-
+    name = input("Введите имя: ")
+    return name
 
 def phone():
-    print(" phone ")
-    return "12345678"
-
+    while not phone.isdigit():
+        phone = input("Введите телефон: ")
+    return phone
 
 def comment():
-    print(" comment ")
-    return "asdfghj"
-
-
+    comment = input("Комментарий: ")
+    return comment
