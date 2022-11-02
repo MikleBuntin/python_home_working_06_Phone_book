@@ -13,13 +13,17 @@ def view():
     logger.view("all") # Закладка для поиска по контактам
 
 
-def save():
-    with open('phone_book.csv', 'r') as file:
-        phone_book = file.read()
-    format = input("Введите имя файла: ")
-    with open(format, 'w') as new_file:
-        new_file.write(phone_book)
-        print("Данные сохранены в файл.")
+def save(): # Доступные форматы: .txt, .csv, .html
+    new_file_name = input("Введите имя файла: ")
+    new_file_name = new_file_name.split('.')
+    if new_file_name[1] == "txt":
+        logger.save_to_txt(new_file_name[0])
+    elif new_file_name[1] == "csv":
+        logger.save_to_csv(new_file_name[0])
+    elif new_file_name[1] == "html":
+        logger.save_to_html(new_file_name[0])
+
+
 
 
 

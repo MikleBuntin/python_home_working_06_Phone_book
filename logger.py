@@ -12,6 +12,18 @@ def view(what):
                 array = list(line.split(';'))
                 print("Name: {}, phone: {} - {}" .format(array[0], array[1], array[2]))
 
-# def save_to_txt(format):
+def save_to_txt(f_name):
+    with open('phone_book.csv', 'r') as file:
+        phone_book = file.read()
+        phone_book = phone_book.replace(';', ' ')
+
+    with open(f_name + ".txt", 'w') as new_file:
+        new_file.write(phone_book)
+        print("Данные сохранены в файл.")
+
+# def save_to_csv(f_name):
+#
+# def save_to_html(f_name):
+#
 
 
