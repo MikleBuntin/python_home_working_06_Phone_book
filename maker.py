@@ -1,6 +1,8 @@
 import user_interface
 import input_interpreter as inputs
 import logger
+import saver
+import file_importer as f_imp
 
 def add():
     print("Add ")
@@ -17,17 +19,21 @@ def save(): # Доступные форматы: .txt, .csv, .html
     new_file_name = input("Введите имя файла: ")
     new_file_name = new_file_name.split('.')
     if new_file_name[1] == "txt":
-        logger.save_to_txt(new_file_name[0])
+        saver.save_to_txt(new_file_name[0])
     elif new_file_name[1] == "csv":
-        logger.save_to_csv(new_file_name[0])
+        saver.save_to_csv(new_file_name[0])
     elif new_file_name[1] == "html":
-        logger.save_to_html(new_file_name[0])
-
-
-
-
-
-    print("Save ")
-
+        saver.save_to_html(new_file_name[0])
+    else:
+        print("Формат не поддерживается. ")
 def imp():
-    print("Import ")
+    file_name = input("Введите имя файла: ")
+    file_name = file_name.split('.')
+    if file_name[1] == "txt":
+        f_imp.imp_txt(file_name[0])
+    elif new_file_name[1] == "csv":
+        f_imp.imp_csv(file_name[0])
+    elif new_file_name[1] == "html":
+        f_imp.imp_html(file_name[0])
+    else:
+        print("Формат не поддерживается. ")

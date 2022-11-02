@@ -1,0 +1,6 @@
+Name: Mikle, phone: 892657895 - Мой номер
+
+Name: Tod, phone: 98765432125 - other number
+
+Name: Sam, phone: 78912345685 - Another number
+
