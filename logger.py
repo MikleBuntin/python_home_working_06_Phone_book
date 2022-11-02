@@ -21,7 +21,12 @@ def save_to_txt(f_name):
         new_file.write(phone_book)
         print("Данные сохранены в файл.")
 
-# def save_to_csv(f_name):
+def save_to_csv(f_name):
+    with open('phone_book.csv', 'r') as file:
+        phone_book = file.read()
+    with open(f_name + ".csv", 'w') as new_file:
+        new_file.write(phone_book)
+        print("Данные сохранены в файл {}.csv.".format(f_name))
 #
 # def save_to_html(f_name):
 #
