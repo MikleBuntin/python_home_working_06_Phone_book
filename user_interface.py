@@ -4,6 +4,3 @@ def ask_command(): # выдать список команд, запросить 
     in_command = str(input("Введите команду: "))
     # print("in_command.lower(): ", in_command.lower())
     return in_command.lower()
-
-# def view(command):
-#     print("command: ", command)
