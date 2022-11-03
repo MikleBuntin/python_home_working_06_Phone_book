@@ -16,6 +16,7 @@ def view():
 
 
 def save(): # Доступные форматы: .txt, .csv, .html
+    print("Доступные форматы: .txt, .csv, .html")
     new_file_name = input("Введите имя файла: ")
     new_file_name = new_file_name.split('.')
     if new_file_name[1] == "txt":
@@ -27,6 +28,7 @@ def save(): # Доступные форматы: .txt, .csv, .html
     else:
         print("Формат не поддерживается. ")
 def imp():
+    print("Доступные форматы: .txt, .csv, .html")
     file_name = input("Введите имя файла: ")
     file_name = file_name.split('.')
     if file_name[1] == "txt":
