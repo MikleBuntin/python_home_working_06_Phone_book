@@ -1,37 +1,19 @@
-Mikle;892657895;пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
-Tod;98765432125;other number
-Sam;78912345685;Another number
-Mikle;892657895;пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+My;897564213;Мой ноер № 1
+Mikle;654987654;мой первый телефон
+Юля;95423854;Второй телефон
+Brad;5258525;Friend
+Mikle;654987654;мой первый телефон
 
-Mary;9823745354;new attr
-dsfjirf;8;wergy br
-Mikle;892657895;Мой номер
-Tod;98765432125;other number
-Sam;78912345685;Another number
-    <p style="font-size:30px;">Name: Mikle;892657895
-    <p style="font-size:30px;">Name: Tod;98765432125
-    <p style="font-size:30px;">Name: Sam;78912345685
-    <p style="font-size:30px;">Name: Mikle;892657895
-    <p style="font-size:30px;">Name: Mary;9823745354
-    <p style="font-size:30px;">Name: dsfjirf;8
-    <p style="font-size:30px;">Name: Mikle;892657895
-    <p style="font-size:30px;">Name: Tod;98765432125
-    <p style="font-size:30px;">Name: Sam;78912345685
-    <p style="">Name: Mikle;892657895;пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+Юля;95423854;Второй телефон
 
-    <p style="">Name: Tod;98765432125;other number
+Brad;5258525;Friend
 
-    <p style="">Name: Sam;78912345685;Another number
+    <p ">Name: Mikle;654987654;мой первый телефон
 
-    <p style="">Name: Mikle;892657895;пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    <p ">Name: Юля;95423854;Второй телефон
 
-    <p style="">Name: Mary;9823745354;new attr
+    <p ">Name: Brad;5258525;Friend
 
-    <p style="">Name: dsfjirf;8;wergy br
-
-    <p style="">Name: Mikle;892657895;Мой номер
-
-    <p style="">Name: Tod;98765432125;other number
-
-    <p style="">Name: Sam;78912345685;Another number
-
+Mikle, ;654987654 ;мой первый телефон
+Юля, ;95423854 ;Второй телефон
+Brad, ;5258525 ;Friend

@@ -6,7 +6,7 @@ def log(name, phone, comment):
 
 def view(what):
     if what == "all":
-        with open('phone_book.csv', 'r') as file:  # , encoding="utf-8"
+        with open('phone_book.csv', 'r') as file:  # , encoding="cp1251"
             # lines = file.read()
             for line in file:
                 if len(line) > 3:
